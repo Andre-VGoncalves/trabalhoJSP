@@ -57,7 +57,7 @@
                 <h3>Geral</h3>
                 <ul class="nav side-menu">
                     
-                    <li><a><i class="fa fa-edit"></i> Cadastro <span class="fa fa-chevron-down"></span></a>
+                    <li><a><i class="fa fa-edit"></i> Menu <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="cliente.jsp">Cliente</a></li>
                             <li><a href="livro.jsp">Livros</a></li>
@@ -84,7 +84,7 @@
              <div class="modal-body">
                   <%
                         ClienteDAO cl = new ClienteDAO();
-                        List<Cliente> lstcl = cl.selecionar();
+                        List<Cliente> client = cl.selecionar();
                     %>
 
                     <table id="datatable-responsive" class="table table-striped dt-responsive nowrap" cellspacing="0" width="100%">
@@ -95,15 +95,15 @@
                         </thead>
                         <tbody>
                             <%
-                                for (int i = 0; i < lstcl.size(); i++) {
+                                for (int i = 0; i < client.size(); i++) {
                             %>                           
                               
                             </td>
 
                                 <td>
-                                    <a href="finalizarPedido.jsp?id=<%= lstcl.get(i).getId()%>&nome= <%  out.print(lstcl.get(i).getNome());%>">
+                                    <a href="finalizarPedido.jsp?id=<%= client.get(i).getId()%>&nome= <%  out.print(client.get(i).getNome());%>">
                                         
-                                     <%  out.print(lstcl.get(i).getNome());%>
+                                     <%  out.print(client.get(i).getNome());%>
                                     </a>
                                 </td>
                             </tr>
