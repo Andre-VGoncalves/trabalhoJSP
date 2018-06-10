@@ -21,10 +21,7 @@ import javax.persistence.TemporalType;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- *
- * @author Programador
- */
+
 @Entity
 @Table(name = "cliente")
 @XmlRootElement

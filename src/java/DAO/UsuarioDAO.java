@@ -13,10 +13,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
-/**
- *
- * @author Programador
- */
+
 public class UsuarioDAO extends Usuario {
 
     public EntityManager getEM() {

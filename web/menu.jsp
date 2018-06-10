@@ -63,6 +63,8 @@
                             <li><a href="livro.jsp">Livros</a></li>
                          
                             <li><a href="usuario.jsp">Usuário</a></li>
+                            
+                            <li><a href="relatorio.jsp">Relatório</a></li>
                         </ul>
                     </li>
 
