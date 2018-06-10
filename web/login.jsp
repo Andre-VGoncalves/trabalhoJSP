@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Dashboad de vendas</title>
+        <title>Biblioteca</title>
         <%@include file="head.jsp" %>
     </head>
     <%
@@ -31,16 +31,12 @@
                             </div>
                             <div>
                                 <input type="submit" value="Logar"/>
-                                <a class="reset_pass" href="#">Esqueceu a senha?</a>
+                              
                             </div>
 
                             <div class="clearfix"></div>
 
                             <div class="separator">
-                                <p class="change_link">Cadastrar-se?
-                                    <a href="#signup" class="to_register"> Criar usuário </a>
-                                </p>
-
                                 <div class="clearfix"></div>
                                 <br />
                         </form>
