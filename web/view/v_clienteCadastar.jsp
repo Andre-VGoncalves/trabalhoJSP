@@ -38,10 +38,6 @@
     } catch (Exception e) {
     }
 
-    //request.setAttribute("action", action);
-    //request.setAttribute("idUsuario", idUsuario);
-    //out.print(action);
-    //out.print(idUsuario);
 %>
     </script>
 <!-- page content -->

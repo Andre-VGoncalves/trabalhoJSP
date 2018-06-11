@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="Model.Cliente"%>
 <%@page import="DAO.ClienteDAO"%>
@@ -23,7 +24,6 @@
         cli.setLogradouro(logradouro);
         SimpleDateFormat formato = new SimpleDateFormat("yyyy-mm-dd");
         cli.setAniversario( formato.parse(aniversario));
-          
         if (ativo != null) {
             cli.setAtivo(true);
         } else {
@@ -31,7 +31,12 @@
         }
         if (action.equals("insert")) {
             cli = clidao.salvar(cli);
-        } else {
+        }else if (action.equals("delete")){
+           int i = Integer.parseInt(id);
+           List<Cliente> teste = clidao.selecionar();
+           clidao.delete(teste.get(i));
+        }
+            else {
             cli.setId(Integer.parseInt(id));
             cli = clidao.update(cli);
         }

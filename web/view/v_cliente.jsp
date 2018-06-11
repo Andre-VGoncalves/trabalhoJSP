@@ -37,6 +37,7 @@
                     <%
                         ClienteDAO cli = new ClienteDAO();
                         List<Cliente> cliente = cli.selecionar();
+                        
                     %>
 
                     <table id="datatable-responsive" class="table table-striped dt-responsive nowrap" cellspacing="0" width="100%">
@@ -68,9 +69,9 @@
                                 }%></td>
                                 <td><a href="clienteCadastrar.jsp?action=update&id=<%= cliente.get(i).getId()%>">
                                         <i class="fa fa-edit"></i> atualizar
-                                    </a></td>
+                                    </a></td>                                    
                             </tr>
-                            <%                                }
+                            <%                               } 
                             %>
                         </tbody>
                     </table>

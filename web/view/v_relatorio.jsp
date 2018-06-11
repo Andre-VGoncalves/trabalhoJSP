@@ -100,7 +100,7 @@
                         </thead>
                         <tbody>
                             <%
-                                for (int i = 0; i < produto.size(); i++) {
+                                for (int i = 0; i < 3; i++) {
                             %>
                             <tr>
                                 

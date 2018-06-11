@@ -58,7 +58,7 @@
                                     out.print("Sim");
                                 }else{
                                     out.print("Não");
-                                }%></td>ssss
+                                }%></td>
                                 <td><a href="livroCadastrar.jsp?action=update&id=<%= produto.get(i).getId()%>">
                                         <i class="fa fa-edit"></i> atualizar
                                     </a></td>

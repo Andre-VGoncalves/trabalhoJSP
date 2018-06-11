@@ -49,6 +49,18 @@ public class ClienteDAO extends Cliente {
         em.close();
         return local;
     }
+    
+    
+    public void delete(Cliente id){
+        EntityManager em = getEM();
+        em.getTransaction().begin();
+        em.remove(id);
+        em.getTransaction().commit();
+        em.close();                    
+        
+    }
+    
+    
     public Cliente update(Cliente local) {
         EntityManager em = getEM();
         em.getTransaction().begin();

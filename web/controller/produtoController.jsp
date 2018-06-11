@@ -26,7 +26,7 @@
             produto.setId(Integer.parseInt(id));
             produto = produtoDAO.update(produto);
         }
-        response.sendRedirect("../produto.jsp");
+        response.sendRedirect("../livro.jsp");
 
     } catch (Exception e) {
         out.print(e.getMessage());
